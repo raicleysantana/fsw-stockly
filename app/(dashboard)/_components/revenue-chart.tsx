@@ -11,8 +11,8 @@ import { DayTotalRevenueDto } from "@/app/_data-access/dashboard/get-last-14-day
 import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
 const chartConfig = {
-  revenue: {
-    label: "Receita",
+  totalRevenue: {
+    label: "Receita: ",
   },
 } satisfies ChartConfig;
 
@@ -35,7 +35,7 @@ const RevenueChat = ({ data }: RevenueChartProps) => {
 
         <ChartTooltip content={<ChartTooltipContent />} />
 
-        <Bar dataKey="totalRevenue" radius={4} />
+        <Bar dataKey={"totalRevenue"} radius={4} />
       </BarChart>
     </ChartContainer>
   );
