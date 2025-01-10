@@ -17,8 +17,8 @@ import TotalSalesCard from "./_components/total-sales-card";
 import TotalInStockCard from "./_components/total-sales-in-stock-card";
 
 // Essa página será montada uma vez e reutilizada (SSG), podendo ser incrementada de forma regenerativa (ISR)
-export const dynamic = "force-static";
-export const revalidate = 10;
+// export const dynamic = "force-static";
+// export const revalidate = 10;
 
 const Home = async () => {
   return (
